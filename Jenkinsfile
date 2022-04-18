@@ -11,7 +11,7 @@ pipeline{
 	    stage('gitclone') {
 
 			steps {
-				checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/cloudgladiator/How-to-Push-docker-image-to-Docker-Hub-using-Jenkins-Pipeline.git']]])
+				checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/cloudgladiator/How-to-Push-docker-image-to-Docker-Hub-using-Jenkins-Pipeline.git']]])
 			}
 		}
 
